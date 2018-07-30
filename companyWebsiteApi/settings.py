@@ -25,8 +25,8 @@ SECRET_KEY = '^fs!f+#gwm2#9!*ws8f1^lwb-y=y()07c$)t$p@@k2bp2$85c8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['UdanaWebsite.qxfay7hrj7.us-west-2.elasticbeanstalk.com']
-
+#ALLOWED_HOSTS = ['UdanaWebsite.qxfay7hrj7.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = []
 
 # Application definition
 

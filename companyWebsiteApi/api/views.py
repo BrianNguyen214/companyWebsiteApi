@@ -17,7 +17,7 @@ def MembersManip(request):
         data = Member.objects.all()
         theMembers = []
         for member in data:
-            theMembers.append({member.Name, member.Position, member.Description, member.PictureLink)})
+            theMembers.append([member.Name, member.Position, member.Description, member.PictureLink])
             
         return JsonResponse({"These are the board members": theMembers})
 
