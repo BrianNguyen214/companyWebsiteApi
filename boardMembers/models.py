@@ -5,10 +5,10 @@ from django.db import models
 
 class Member(models.Model):
     # pk aka id --> numbers
-    name = models.CharField(max_length=250)
-    position = models.CharField(max_length=100)
-    description = models.CharField(max_length=500)
-    picture = models.CharField(max_length=1000)
+    Name = models.CharField(max_length=250)
+    Position = models.CharField(max_length=100)
+    Description = models.CharField(max_length=500)
+    PictureLink = models.CharField(max_length=1000)
 
     def __str__(self):
         return self.name + " - " + self.position
