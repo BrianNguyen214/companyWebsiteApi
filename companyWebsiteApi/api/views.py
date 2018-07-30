@@ -17,19 +17,19 @@ def MembersManip(request):
         data = Member.objects.all()
         theMembers = []
         for member in data:
-            theMembers.append({member.name: (member.position, member.description, member.picture)})
+            theMembers.append({member.Name, member.Position, member.Description, member.PictureLink)})
             
         return JsonResponse({"These are the board members": theMembers})
 
     if request.method == 'POST':
         body = request.body
         dict = json.loads(str(request.body).encode('utf-8'))
-        newName = dict['name']
-        newPosition = dict['position']
-        newDescription = dict['description']
-        newPicture = dict['picture']
-        newMember = Member(name = newName, position = newPosition, description = newDescription, picture = newPicture)
+        newName = dict['Name']
+        newPosition = dict['Position']
+        newDescription = dict['Description']
+        newPicture = dict['PictureLink']
+        newMember = Member(Name = newName, Position = newPosition, Description = newDescription, PictureLink = newPicture)
         newMember.save()
-        print newMember.name
-        print newMember.position
+        print newMember.Name
+        print newMember.Position
         return JsonResponse({"Result":"A new member was successfully added"})

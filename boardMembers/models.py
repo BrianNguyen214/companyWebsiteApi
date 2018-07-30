@@ -11,4 +11,4 @@ class Member(models.Model):
     PictureLink = models.CharField(max_length=1000)
 
     def __str__(self):
-        return self.name + " - " + self.position
+        return self.Name + " - " + self.Position
