@@ -1,0 +1,2 @@
+# companyWebsiteApi
+This is a prototype rest api for the rest api used in my company's website. The application was made with Django, and its goal was to allow our company to add board members to the About Us page.
